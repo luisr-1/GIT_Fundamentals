@@ -1,18 +1,21 @@
 		GIT
 
 	Inicialização de um repositório
-	  *git init - A partir da inicialização do repositório, o git consegue nos informar as alterações realizadas dentro do repositório, nos informa quem modificou, quando modificou e quais foram as alterações feitas no arquivo.
+	  *git init - A partir da inicialização do repositório, o git consegue nos informar as alterações realizadas dentro do repositório,
+				  nos informa quem modificou, quando modificou e quais foram as alterações feitas no arquivo.
 	  *git status - É um comando para nos mostrar se houveram commits, se ainda existe arquivos que não estão sendo monitorados pelo git, nos informa em que branch estamos.
-	  *git add - É o comando para fazer o git começar a versionar o nosso arquivo, a partir disso iremos saber as mudanças que irão ocorrer nos nossos arquivos. Todas vezes que fizermos alguma modificação em algum arquivo, a gente roda esse comando com o nome do arquivo.
+	  *git add - É o comando para fazer o git começar a versionar o nosso arquivo, a partir disso iremos saber as mudanças que irão ocorrer nos nossos arquivos.
+				 Todas vezes que fizermos alguma modificação em algum arquivo, a gente roda esse comando com o nome do arquivo.
 	  *git rm - É o comando para fazer o git para parar de versionar um arquivo.
-	  *git commit -m - É a maneira que salvamos as alterações dos nossos arquivos, sempre usar uma mensagem descritiva do que está acontecendo em cada commit. Com esse comando, ele mostra quantas modificações foram inseridas nos arquivos.
+	  *git commit -m - É a maneira que salvamos as alterações dos nossos arquivos, sempre usar uma mensagem descritiva do que está acontecendo em cada commit.
+					   Com esse comando, ele mostra quantas modificações foram inserida nos arquivos.
 	  *git log - Mostra todos os commits feitos e o ID de quem fez esses commits. A gente várias combinações desse comando que podem ser bastante úteis.
 	  
-	Inicializando um repositório para salvar somente os commits
+	Inicializando um repositório para salvar somente os commits, basicamente salvar as alterações do arquivo
 	  *git init --bare	
 	
 	Compartilhando o código com a equipe
-	  *git add remote <URL> - Assim a gente se conecta com o servidor remoto
+	  *git add remote <URL> - Assim a gente se conecta com o servidor remoto.
 	  *git remote - para checar se existe repositórios remotos.
 	  *git remote -v - para checar o status.
 	  *git remote rm <nome-do-servidor> - A gente para de se conectar com o servidor remoto.
@@ -23,10 +26,13 @@
 	  *git pull <servidor-remoto> <nome da branch> - Assim a gente puxa as mudanças para o nosso repositório local.
 	  
 	Branches(ramos) - O que são e como trabalhar com elas
-	 São utilizados para desenvolver funcionalidades isoladas uma das outras. A branch "main" é a branch principal e onde contém o código fonte oficial
-	A gente vai criando outras branches para adicionar novas funcionalidades, para que as mudanças em outras branches não afete a branche principal. Então só depois de ter a certeza de que tudo está corretamente funcionando.
+		São utilizados para desenvolver funcionalidades isoladas uma das outras.
+		A branch "main" é a branch principal e onde contém o código fonte oficial
+		A gente vai criando outras branches para adicionar novas funcionalidades,
+		para que as mudanças em outras branches não afete a branche principal.
+		Então só depois de ter a certeza de que tudo está corretamente funcionando e devidamente pronto, então é feito o merge das branches..
 	
-	e devidamente pronto, então é feito o merge das branches.
+
 	  *git branch <nome-da-nova-branch> - Você cria uma nova branch.
 	  *git branch - A gente consegue checar quais são todas as branchs que temos no nosso repositório.
 	  *git branch -m <novo-nome-para-a-branch> - Assim a gente consegue mudar o nome da branch em que estamos trabalhando. 
@@ -41,14 +47,17 @@
 //
 
 
-/*Para fazer o git ignorar arquivos de configuração, a gente faz um arquivo 
- .gitignore
+/*Para fazer o git ignorar arquivos de configuração, a gente faz um arquivo:
+	.gitignore
 	obs: adc esse arquivo tbm
 */
 
 
 		DICAS SOBRE COMMIT
-*/ Sempre commit algo funciona. Sempre que fizer mudanças significativas é necessário commitar. Interessante a cada resolução de bug fazer um commit. Assim a gente consegue rastrear melhor as mudanças do código.
+*/	Sempre commit algo que funciona.
+	Sempre que fizer mudanças significativas é necessário commitar.
+	Interessante a cada resolução de bug fazer um commit.
+	Assim a gente consegue rastrear melhor as mudanças do código.
 
 
 /* FERRAMENTA LEGAL PARA APRENDER GIT
