@@ -6,6 +6,8 @@
 	  *git status - É um comando para nos mostrar se houveram commits, se ainda existe arquivos que não estão sendo monitorados pelo git, nos informa em que branch estamos.
 	  *git add - É o comando para fazer o git começar a versionar o nosso arquivo, a partir disso iremos saber as mudanças que irão ocorrer nos nossos arquivos.
 				 Todas vezes que fizermos alguma modificação em algum arquivo, a gente roda esse comando com o nome do arquivo.
+	  *git restore <nome-do-arquivo> - Restaura a ação de git add.
+	  *git revert <hash-do-commit> - Desfaz um commit.
 	  *git rm - É o comando para fazer o git para parar de versionar um arquivo.
 	  *git commit -m - É a maneira que salvamos as alterações dos nossos arquivos, sempre usar uma mensagem descritiva do que está acontecendo em cada commit.
 					   Com esse comando, ele mostra quantas modificações foram inserida nos arquivos.
@@ -39,7 +41,11 @@
 	  *git checkout <nome-de-uma-branch> - Você muda para a branch escolhida e poderá começar implementar o seu código sem estar alterando o funcionamento da branch principal.
 //	  *git checkout -b <nome-da-nova-branch-a-ser-criada> - você cria a nova branch e muda para ela com um comando só.
 	  *git merge <nome-da-branch> - Isso irá unir as ramificações e atualizará as mudanças feitas até o momento.
-	  *git rebase <nome-da-branch> - Ainda não sei o que caralhos vai fazer, mas tudo bem
+	  *git rebase <nome-da-branch> - Isso também irá unir as ramificações e atualizar, mas manterá como a última alteração do arquivo.
+
+	  REBASE X MERGE:
+		quando trabalhamos em algo comartilhado com outras pessoas, é interessante a gente utilizar o merge, pois o rebase altera o histórico do git e pode ser bem mais difícil de
+		desfazer uma cagada.
  
 	HEAD: Estado atual do nosso código, ou seja, onde o Git os colocou
 	Working tree: Local onde os arquivos realmente estão sendo armazenados e editados
