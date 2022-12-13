@@ -6,13 +6,20 @@
 	  *git status - É um comando para nos mostrar se houveram commits, se ainda existe arquivos que não estão sendo monitorados pelo git, nos informa em que branch estamos.
 	  *git add - É o comando para fazer o git começar a versionar o nosso arquivo, a partir disso iremos saber as mudanças que irão ocorrer nos nossos arquivos.
 				 Todas vezes que fizermos alguma modificação em algum arquivo, a gente roda esse comando com o nome do arquivo.
+	  *git checkout -- <nome-do-arquivo> - Limpa a mudança ainda não adicionada
 	  *git restore <nome-do-arquivo> - Restaura a ação de git add.
-	  *git revert <hash-do-commit> - Desfaz um commit.
+	  *git revert <hash-do-commit> - Desfaz um commit. Cria um commit que desfaz o outro commit.
+	  *git reset <estado> <nome-do-arquivo> - Desfaz um git add.
 	  *git rm - É o comando para fazer o git para parar de versionar um arquivo.
 	  *git commit -m - É a maneira que salvamos as alterações dos nossos arquivos, sempre usar uma mensagem descritiva do que está acontecendo em cada commit.
 					   Com esse comando, ele mostra quantas modificações foram inserida nos arquivos.
+	  *git stash - É um comando para salvar uma parte da alteração para depois.
+	  *git stash list - Nos dá uma lista das alterações que estão salvas para depois.
+	  *git stash apply <numero-do-item> - Aplica as mudanças salvas.
+	  *git stash drop <numero-do-item> - Retira da lista a mudança.
+	  *git stash pop - Retira o item do topo da pilha e retorna o estado do arquivo salvo.
 	  *git log - Mostra todos os commits feitos e o ID de quem fez esses commits. A gente várias combinações desse comando que podem ser bastante úteis.
-	  
+
 	Inicializando um repositório para salvar somente os commits, basicamente salvar as alterações do arquivo
 	  *git init --bare	
 	
