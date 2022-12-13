@@ -19,6 +19,9 @@
 	  *git stash drop <numero-do-item> - Retira da lista a mudança.
 	  *git stash pop - Retira o item do topo da pilha e retorna o estado do arquivo salvo.
 	  *git log - Mostra todos os commits feitos e o ID de quem fez esses commits. A gente várias combinações desse comando que podem ser bastante úteis.
+	  *git log -n <numero> - para mostrar o número desejado de commits feitos.
+	  *git diff <hash-commit>..<hash-commit-2> - Comando para ver as alterações entre n commits.
+	  *git diff - Mostra as diferenças do arquivo que ainda não foi adicionado para commitar.
 
 	Inicializando um repositório para salvar somente os commits, basicamente salvar as alterações do arquivo
 	  *git init --bare	
@@ -58,7 +61,9 @@
 	Working tree: Local onde os arquivos realmente estão sendo armazenados e editados
 	index: Local onde o Git armazena o que será commitado, ou seja, o local entre a working tree e o repositório Git em si.
 //
-
+	TAGS -
+	  *git tag -a "nome-da-versao" -m "mensagem" - para adicionar uma tag, para marcar uma release. Lá no Github, aparece uma nova release que pode ser baixado pelas pessoas.
+	  *git push origin <nome-tag> - para enviar essa tag para o nosso github.
 
 /*Para fazer o git ignorar arquivos de configuração, a gente faz um arquivo:
 	.gitignore
